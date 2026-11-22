@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 306" role="img" aria-labelledby="title desc">
+  <title id="title">從頂部看一顆網球如何轉到印刷位置</title>
+  <desc id="desc">左圖只見一道彎曲的縫線。中圖可見兩道縫線，但中心仍偏斜。右圖經雙相機微調後，目標印刷區落在兩道縫線之間。此圖為動作示意。</desc>
+  <defs>
+    <clipPath id="face"><circle r="62"/></clipPath>
+    <radialGradient id="felt" cx="36%" cy="28%" r="78%">
+      <stop stop-color="#e1ee82"/>
+      <stop offset=".7" stop-color="#c9dc5f"/>
+      <stop offset="1" stop-color="#a6c149"/>
+    </radialGradient>
+    <g id="ball"><circle r="62" fill="url(#felt)" stroke="#677e2f" stroke-width="1.5"/></g>
+    <g id="seams" fill="none" stroke="#fffde5" stroke-width="6">
+      <path d="M-70,-44 Q0,-2 70,-44 M-70,44 Q0,2 70,44"/>
+    </g>
+    <path id="arrow" d="M-23,0 H22 M15,-6 L22,0 15,6" stroke="#537366" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </defs>
+  <rect x="1" y="1" width="848" height="304" rx="14" fill="#f5f7ef" stroke="#d7dfd3"/>
+  <g font-family="'Microsoft JhengHei','PingFang TC','Noto Sans CJK TC',sans-serif" fill="#203e31">
+    <text x="26" y="36" font-size="18" font-weight="bold">一顆球的對位過程</text>
+    <text x="824" y="36" font-size="14" text-anchor="end" fill="#53675a">頂部視角示意</text>
+    <path d="M26 51 H824" stroke="#d7dfd3"/>
+    <g transform="translate(144 141)">
+      <use href="#ball"/>
+      <g clip-path="url(#face)">
+        <path transform="rotate(-26)" d="M-82,-50 C-15,-64 28,-35 22,1 S-10,47 -78,63" stroke="#fffde5" stroke-width="6" fill="none"/>
+      </g>
+    </g>
+    <use href="#arrow" x="283" y="141"/>
+    <g transform="translate(425 141)">
+      <use href="#ball"/>
+      <g clip-path="url(#face)"><use href="#seams" transform="translate(4 7) rotate(-20)"/></g>
+    </g>
+    <use href="#arrow" x="566" y="141"/>
+    <g transform="translate(706 141)">
+      <use href="#ball"/>
+      <g clip-path="url(#face)"><use href="#seams"/></g>
+      <rect x="-29" y="-11" width="58" height="22" rx="3" fill="none" stroke="#31573d" stroke-dasharray="4 3" stroke-width="2"/>
+    </g>
+    <g text-anchor="middle" font-size="20" font-weight="bold">
+      <text x="144" y="244">只看見一道縫線</text>
+      <text x="425" y="244">轉出兩道縫線</text>
+      <text x="706" y="244">對準印刷區</text>
+    </g>
+    <g text-anchor="middle" font-size="16" fill="#435c4e">
+      <text x="144" y="275">模型估計轉球方向與幅度</text>
+      <text x="425" y="275">頂部、側面相機量剩餘偏差</text>
+      <text x="706" y="275">虛線框是商標要印的位置</text>
+    </g>
+  </g>
+</svg>

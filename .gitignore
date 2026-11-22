@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+/machine-control/alignment-training/data/
+/machine-control/alignment-training/logs/
+/machine-control/alignment-training/plots/
+/machine-control/alignment-training/saved_models/
+/machine-control/alignment-training/model.onnx
+/machine-control/residue-training/dataset/
+/machine-control/residue-training/logs/
+/machine-control/residue-training/saved_models/
+/machine-control/residue-training/model.onnx
+/machine-control/residue-training/annotation-tool/dataset/
+/machine-control/residue-training/annotation-tool/magicwand_config.json

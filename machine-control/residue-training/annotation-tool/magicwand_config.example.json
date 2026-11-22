@@ -1,0 +1,10 @@
+{
+  "IMG_DIR": "dataset/raw_images",
+  "SAVE_DIR": "dataset/masks",
+  "TOLERANCE": 10,
+  "SELECT_RADIUS": 6,
+  "CONNECTIVITY": 4,
+  "RESIZE_SHAPE": [1050, 1050],
+  "RADIUS_STEP": 2,
+  "STATE_FILE": "dataset/masks/_magicwand_state.json"
+}

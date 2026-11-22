@@ -1,0 +1,6 @@
+torch==2.9.1
+numpy
+albumentations>=2,<3
+opencv-python-headless
+tensorboard
+onnx
